@@ -11,14 +11,13 @@ public class Boss
     {
        
         
-        if(mp > 5)
+        if(mp >= 5)
         {
             
-            for (int mpcut = 53;  mpcut >= magicAttack; mpcut -= magicAttack  )
-            {
+            
                 mp -= magicAttack  ;
                 Debug.Log("魔法攻撃をした。残りMPは" +   mp  );
-            }
+            
         }
         else 
         {
@@ -41,6 +40,16 @@ public class Test : MonoBehaviour
 
         boss.Magic(5);
         boss.Magic(5);
+        boss.Magic(5);
+        boss.Magic(5);
+        boss.Magic(5);
+        boss.Magic(5);
+        boss.Magic(5);
+        boss.Magic(5);
+        boss.Magic(5);
+        boss.Magic(5);
+        boss.Magic(5);
+        
     }
     
    private void ascendingorder()
